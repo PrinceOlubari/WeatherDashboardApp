@@ -3,7 +3,7 @@ document.getElementById("search-button").addEventListener("click", function (eve
 
  let cityInput=document.getElementById("search-input").value 
     var locationQuerryURL =
-    "http://api.openweathermap.org/geo/1.0/direct?q="+ cityInput +"&limit=5&appid=49c5abbee178f817547829ce7c14a9e3";
+    "https://api.openweathermap.org/geo/1.0/direct?q="+ cityInput +"&limit=5&appid=49c5abbee178f817547829ce7c14a9e3";
   fetch(locationQuerryURL)
     .then((response) => response.json())
     .then((cities) => {
